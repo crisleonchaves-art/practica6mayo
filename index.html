@@ -5,31 +5,13 @@
 </head>
   
 <body>
-<input type="text" id="buscador" placeholder="Filtrar lista...">
 
-<ul id="paginas">
+<a href="primerapagina.html">portada </a>
     </br>
-  <li><a href="primerapagina.html">portada </a></li>
+<a href="segundapagina.html">thonny </a>
     </br>
-  <li><a href="segundapagina.html">thonny </a></li>
-    </br>
-  <li><a href="segundapagina.html"> paginas web </a></li>
-</ul>
+<a href="segundapagina.html"> paginas web </a>
 
-<script>
-  document.getElementById('buscador').addEventListener('input', function(e) {
-    let texto = e.target.value.toLowerCase();
-    let elementos = document.querySelectorAll('#lista-productos li');
-
-    elementos.forEach(item => {
-      if(item.textContent.toLowerCase().includes(texto)) {
-        item.style.display = ''; // Muestra el elemento
-      } else {
-        item.style.display = 'none'; // Lo oculta
-      }
-    });
-  });
-</script>
-</body>
+<body>
   
 </html>
